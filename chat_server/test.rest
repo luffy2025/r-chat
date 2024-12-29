@@ -1,0 +1,8 @@
+### index handler
+GET http://localhost:8080/
+
+### signup handler
+POST http://localhost:8080/api/signup
+
+### signin handler
+POST http://localhost:8080/api/signin
