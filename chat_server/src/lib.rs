@@ -1,5 +1,7 @@
 mod config;
+mod error;
 mod handlers;
+mod models;
 
 use axum::routing::{get, patch, post};
 use axum::Router;
@@ -54,13 +56,5 @@ impl Deref for AppState {
 
     fn deref(&self) -> &Self::Target {
         &self.inner
-    }
-}
-
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
     }
 }
